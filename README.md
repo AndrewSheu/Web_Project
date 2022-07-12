@@ -1,5 +1,5 @@
-# Yellowish Cafe
-# Website design and develpment
+ Yellowish Cafe
+Website design and develpment
 # Home - image
 # Menu - food price photo
 # location - google map
