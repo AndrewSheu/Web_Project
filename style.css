@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: absolute;
+    font-family: Sans-serif;
+}
+
+header, footer{
+    background-color: wheat;
+    color: white;
+    width: 100%;
+}
+
+header {
+    height: 10vh;
+}
+
+header h1{
+    position: absolute;
+    margin-top: 20px;
+    left: 20%;
+}
+
+footer {
+    height: 15vh;
+    bottom: 0;
+}
+
+footer h3{
+    position: absolute;
+    left: 35%;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+}
+
+.nav a {
+    position: relative;
+    left: 30%;
+    top: 20px;
+    color: white;
+    text-decoration: none;
+}
