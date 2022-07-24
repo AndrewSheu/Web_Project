@@ -11,4 +11,12 @@ const drinks_size = []
 const drinks_price = []
 
 
+<a href="https://www.facebook.com/yellowishhamilton/">
+<i class="fa fa-facebook"></i>
+</a>
 
+<a href="https://www.instagram.com/yellowishcafe/">
+<i class="fa fa-instagram"></i>
+</a>
+<a href="https://goo.gl/maps/195J82aKMWFWB5yW7">
+<i class="fa fa-map-marker "></i>

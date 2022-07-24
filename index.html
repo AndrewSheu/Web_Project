@@ -5,121 +5,241 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Web</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Yellowish Cafe</title>
+    <link rel="stylesheet" href="/new.css">
     <link rel="stylesheet" href="/script.js">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Edu+SA+Beginner&family=Hubballi&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <section>
-        <header>
-            <h1>LOGO</h1>
-            <div class="nav">
-                <a href="">Home</a>
-                <a href="">Menu</a>
-                <a href="">Booking</a>
-                <a href="">Location</a>
-                <a href="">About</a>
+    <header>
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="/img/LOGO.jpg" width="35%" height="auto">
             </div>
-            <div class="sign">
-                <a href="">FB</a>
-                <a href="">IG</a>
-                <a href="">GO</a>
+            <ul class="header-menu">
+                <li class="scroll-to-section">
+                    <a href="#home" class="active">Home</a>
+                </li>
+                <li class="scroll-to-section">
+                    <a href="#aboutus" class="active">About Us</a>
+                </li>
+                <li class="scroll-to-section">
+                    <a href="#menu" class="active">Menu</a>
+                </li>
+                <li class="scroll-to-section">
+                    <a href="#booking" class="active">booking</a>
+                </li>
+                <li class="scroll-to-section">
+                    <a href="#contactus" class="active">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="offset">
+        <section class="home" id="home">
+            <div class="home-container">
+                <div class="home-left-container">
+                    <h1>Yellowish Cafe</h1>
+                    <h4>START YOUR DAY WITH BREAKFAST.</h4>
+                    <button type="but" id="""">Make a Reservation</button>
+                </div>
+                <div class="home-right-conatiner">
+                    <img src="/img/yellowish2.jpg" width="100%">
+                </div>
             </div>
-        </header>
-    
-        <div class="content">
-            <section class="home">
-                <h1>Home</h1>
-                <div class="left">
-                    <p>Welcome to our Website</p>
-                </div>
-                <div class="right">
-                    <img src="/img/Yellowish_brand.jpg">
-                </div>
-            </section>
-            
-            
-            <section class="menu">
-                <h1>Our Menu</h1>
-                <div class="Breakfest">
-                    <h3>Breakfest</h3>
-                    <div class="box1">
-                        <p>name, price</p>
-                        <img src="/img/yellowish-food.png">
+        </section>
+
+        <section class="aboutus" id="aboutus">
+            <div class="aboutus-container">
+                <div class="top-aboutus-container">
+                    <div class="new">
+                        <img src="/img/yellowish-food.png" width="35%">
+                        <div class="aboutus-right-container">
+                            <div class="text-container">
+                                <h1>About Us</h1>
+                                <h4>We Leave A Delicious Memory For You</h4>
+                                <p>
+                                    Yellowish Cafe is a morden Australian conmbin Malaysian Cafe,<br>
+                                    Location in Hamition, it provide a very confid environment <br>
+                                    Including Vegetarian Friendly, Vegan Options. <br>
+                                    Have Breakfast, Lunch, Brunch <br>
+                                    <br>
+                                    <br>
+                                    You can't live without this lovely food. <br>
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="box2">
-                        <p>name, price</p>
-                    </div>
-                    <div class="box3">
-                        <p>name, ingredate, price</p>
-                    </div>
+                    
                 </div>
-            
-                <div class="Lunch">
-                    <h3>Lunch</h3>
-                    <div class="box1">
-                        <h1>Main Dishs</h1>
+                <div class="but-ourlocarion-container">
+                    <div class="old">
+                        <div class="ourlocarion-left-container">
+                            <P>
+                            <h3><i><u>Information</u></i></h3><br>
+                            Our Address: 33 Remora Rd, Hamilton QLD 4007 <br>
+                            Opening Hour: <br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Monday ~ Friday - 7:00 ~ 14:30<br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Saturday - 7:00 ~ 14:00 <br>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Sunday - 7:30 ~ 14:00 <br>
+                            <br>
+                            <h3><i><u>Find a Parking</u></i></h3><br>
+                            </P>
+                        </div>
+                        <div class="ourlocarion-right-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1770.4825270494605!2d153.0699398!3d-27.4391998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b9159057391039d%3A0x958e471895c4846c!2sYellowish!5e0!3m2!1szh-TW!2sau!4v1658492281878!5m2!1szh-TW!2sau"
+                                width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
-                    <div class="box2">
-                        <h1>Side</h1>
-                    </div>
+
                 </div>
-            
-                <div class="Drinks">
-                    <div class="HorCoffee"></div>
-                    <div class="IceCoffee"></div>
-                    <div class="Milkshake"></div>
-                    <div class="Smooth"></div>
-                </div>
-            </section>
-            
-            <section class="booking">
-                <form action="">
-                    <h1>Make a Booking</h1>
-                    <p>Name: </p>
-                    <input type="text" id="booking-name">
-                    <p>Number of People: </p>
-                    <input type="number" id="booking-number">
-                    <p>Phone Number: </p>
-                    <input type="phone" id="booking-email">
-                    <p>Email: </p>
-                    <input type="email" name="" id="booking-email">
-                    <p>Time: </p>
-                    <input type="datetime-local" name="" id="booking-time">
-                    <input type="submit" value="Submit">
-                </form>
-            </section>
-            
-            <section class="location">
-                <h1>Our Location</h1>
-                <div class="location">
-                    <div class="left map"></div>
-                    <div class="right map-describle">
-                        <p>Our address is locate at Hamiation</p>
-                        <h3>Bus: </h3>
-                        <p>Number 60, 322</p>
-                        <h3>Drive: </h3>
-                        <p>Parking area</p>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="about">
-                <h1>About Yellowish</h1>
-                <p>Opening Hours</p>
-            </section>
+
             </div>
-    
-            <footer>
-                <h2>Copyright</h2>
-                <p>Developer: AndrewSheu</p>
-            </footer>
-    </section>
-    
+
+        </section>
+
+        <section class="menu" id="menu">
+            <div class="container.">
+                <div class="menu-container">
+                    <h1>Our Menu</h1>
+
+                    <div class="main-topic">
+                        <h6>Sub Topic</h6>
+                        <h2>Topic</h2>
+                    </div>
+                    <div class="menu-select"></div>
+                    <div class="menu-table">
+                        <div class="menu-breakfest-table">
+                            <div class="left-table">
+                                <div class="table-content">
+                                    <img src="">
+                                    <h4>Food Name</h4>
+                                    <p>ingredits</p>
+                                    <h6>price</h6>
+                                </div>
+                            </div>
+                            <div class="right-table">
+                                <div class="table-content">
+                                    <img src="">
+                                    <h4>Food Name</h4>
+                                    <p>ingredits</p>
+                                    <h6>price</h6>
+                                </div>
+                            </div>
+                            <div class="menu-lunch-table">
+                                <div class="left-table">
+                                    <div class="table-content">
+                                        <img src="">
+                                        <h4>Food Name</h4>
+                                        <p>ingredits</p>
+                                        <h6>price</h6>
+                                    </div>
+                                    <div class="right-table">
+                                        <div class="table-content">
+                                            <img src="">
+                                            <h4>Food Name</h4>
+                                            <p>ingredits</p>
+                                            <h6>price</h6>
+                                        </div>
+                                    </div>
+                                    <div class="menu-drinks-table">
+                                        <div class="left-table">
+                                            <div class="table-content">
+                                                <img src="">
+                                                <h4>Food Name</h4>
+                                                <p>ingredits</p>
+                                                <h6>price</h6>
+                                            </div>
+                                            <div class="right-table">
+                                                <div class="table-content">
+                                                    <img src="">
+                                                    <h4>Food Name</h4>
+                                                    <p>ingredits</p>
+                                                    <h6>price</h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="booking" id="booking">
+            <div class="new-booking-container">
+                <div class="booking-container">
+                    <form action="" class="booking-form">
+                        <h1>Make a Booking</h1>
+                        Name:
+                        <input type="text" id="booking-name">
+                        <br>
+                        Number of People:
+                        <input type="number" id="booking-number">
+                        <br>
+                        Phone Number:
+                        <input type="number" id="booking-email">
+                        <br>
+                        Email:
+                        <input type="email" name="" id="booking-email">
+                        <br>
+                        Time:
+                        <input type="datetime-local" name="" id="booking-time">
+                        <br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="contactus" id="contactus">
+            <div class="contactus-conatiner">
+                <div class="left-contactus-container">
+                    <h1>Our Information</h1>
+                </div>
+                <div class="right-contactus-container">
+                    <p>explain</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-sign">
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com/yellowishhamilton/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/yellowishcafe/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://goo.gl/maps/195J82aKMWFWB5yW7"><i class="fa fa-map-marker "></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <a>
+                                <h1>Yellowish</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-word">
+                        <h4>Copyright</h4>
+                        <p class="footer_name">Developer: AndrewSheu</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 
 </body>
