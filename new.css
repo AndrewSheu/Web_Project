@@ -137,8 +137,6 @@ header {
 
 .aboutus-container {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     padding-top: 10vh;
 }
 
@@ -219,30 +217,53 @@ hr {
 }
 
 .menu-container {
+    width: 100%;
     background-color: #FCDD6E;
-    height: auto    ;
+    height: auto;
 }
 
-
+.booking-main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .booking {
-    padding-top: 10vh;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    height: 50vh;
+    align-items: center;
+    background-color: #fef1aa56   ;
+}
+
+.booking-pic {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 30px;
+    min-height: 30vh;
+    max-height: 50vh;
+    width: 100%;
+    opacity: 80%;
 }
 
 .booking-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    min-height: 60vh;
-    padding: 20px;
-    height: 90vh;
+    padding: 30px;
+    min-height: 20vh;
+    height: 50vh;
     width: 100%;
 }
 
 .booking-container h2 {
     width: 100%;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 900;
     font-size: 36px;
     margin-bottom: 20px;
 }
@@ -251,7 +272,7 @@ hr {
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .booking-container .row100 .col {
@@ -261,32 +282,116 @@ hr {
     margin: 30px 0 20px;
 }
 
+.booking-container .row100 .col .inputbox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
+.booking-container .row100 .col .inputbox input,
+.booking-container .row100 .col .inputbox textarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0 10px;
+    z-index: 1;
+    color: black;
+}
+
+.booking-container .row100 .col .inputbox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.date {
+    text-align: right;
+}
+
+.date:focus {
+    text-align: center;
+}
+
 form {
     position: relative;
     z-index: 1000;
     width: 100%;
-    max-width: 1000px;
-    padding: 50px;
-    background: rgb(253, 212, 63, 0.3);
+    max-width: 800px;
+    padding: 30px;
+    background: #fcdd6e;
     box-shadow: 0 25px 45px rgb(253, 212, 63, 0.3);
     border: 1px solid rgb(253, 212, 63, 0.1);
     border-radius: 10px;
     backdrop-filter: blur(25px);
 }
 
-.booking-form input, textarea {
-    border: 1px solid black;
-    margin: 5px;
+.booking-container .row100 .col .inputbox input:focus + .text,
+.booking-container .row100 .col .inputbox input:valid + .text,
+.booking-container .row100 .col .inputbox textarea:focus + .text,
+.booking-container .row100 .col .inputbox textarea:valid + .text {
+    top: -35px;
+    left: -10px;
 }
 
+.booking-container .row100 .col .inputbox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+}
 
+.booking-container .row100 .col .inputbox input:focus ~ .line,
+.booking-container .row100 .col .inputbox input:valid ~ .line {
+    height: 100%;
+}
 
+.booking-container .row100 .col .inputbox.textarea {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    padding: 10px 0;  
+}
 
+.booking-container .row100 .col .inputbox textarea:focus ~ .line,
+.booking-container .row100 .col .inputbox textarea:valid ~ .line {
+    height: 100%;
+}
 
+.booking-container .row100 .col input[type="submit"] {
+    border: 2px solid white;
+    padding: 10px 40px;
+    cursor: pointer;
+    background:#FCDD6E;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 2px;
+}
 
+.booking-container .row100 .col input[type="submit"]:hover {
+    background: white;
+    color: black;
+}
 
 .contactus {
-    height: 90vh;
+    height: 60vh;
 }
 
 .contactus-conatiner {
@@ -308,7 +413,7 @@ form {
     width: 20%;
     height: 30%;
     background-color: #fff;
-    margin:     30px;
+    margin: 30px;
 }
 
 
