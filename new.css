@@ -246,7 +246,7 @@ hr {
     min-height: 30vh;
     max-height: 50vh;
     width: 100%;
-    opacity: 80%;
+    opacity: 60%;
 }
 
 .booking-container {
@@ -328,7 +328,7 @@ form {
     position: relative;
     z-index: 1000;
     width: 100%;
-    max-width: 800px;
+    max-width: 700px;
     padding: 30px;
     background: #fcdd6e;
     box-shadow: 0 25px 45px rgb(253, 212, 63, 0.3);
