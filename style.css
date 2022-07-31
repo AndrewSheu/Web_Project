@@ -152,7 +152,7 @@ header {
     font-size: 35px;
 }
 
-.home-container6 a:hover {
+.home-container6 a:focus {
     color: black;
     font-size: 50px;
 
@@ -245,73 +245,128 @@ header {
 .menu-container1 {
     width: 100%;
     background-color: #FCDD6E;
-    height: 80vh;
-}
-
-.menu-container1 h1 {
-    font-size: 36px;
-    color: white;
-    padding-bottom: 20px;
+    height: auto;
 }
 
 .menu-container2{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.menu-container3{
-    padding: 10px;
+.menu-container3 {
     
+}
+
+.menu-container3 h1 {
+    font-size: 36px;
+    color: white;
+    padding: 30px;
 }
 
 .menu-container4{
     display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
 }
 
-.menu-container4 button {
-    font-size: 15px;
-    color: white;
-    background-color: #FCDD6E;
-    border:2px #ffffff solid;   
-    padding: 10px 20px; 
-    display: inline-block;
-    border-radius: 5px;
-    font-weight: 700;
-    transition: all 0.3s;
-    cursor: pointer;    
+.menu-container4 {
 }
 
 .menu-container5{
     padding: 10px;
 }
 
-.menu-container5 button:hover {
+.menu-container5 ul {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+}
+
+.menu-container5 li {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    
+}
+
+
+.menu-container5 i {
+    color: #fff;
+    font-size: 50px;
+    background-color: #FCDD6E;
+    border:2px #ffffff solid;   
+    padding: 10px 20px; 
+    display: inline-block;
+    font-weight: 700;
+    transition: all 0.3s;
+    cursor: pointer; 
+}
+
+.menu-container5 i:hover {
     color: #FCDD6E;
     background-color: #fff;
+}
+
+.menu-container5 p {
+    background-color: #fff;
+    color: #FCDD6E;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-style: oblique;
 }
 
 .menu-container6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    width: 100%;
 }
 
 .menu-container7 {
     background-color: #fff;
     width: 80%;
     justify-items: center;
-    padding: 50px;
+    padding: 20px;
 }
 
 .menu-container8 {
     background-color: #FCDD6E;
+    padding: 20px;
+    display: flex;
+    flex-direction: wrap;
+    width: 100%;
 }
 
-.menu-container6{
+.menu-container9 {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
 
+}
+
+.menu-container10 {
+    background-color:#FCDD6E;
+    padding: 20px;
+    width: 100%;
+}
+
+.menu-container11 {
+    padding: 10px;
+    width: 100%;
+}
+
+.menu-container12 {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #FCDD6E;
 }
 
 .booking-main {
