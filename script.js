@@ -9,3 +9,23 @@ const lunch_price = []
 const drinks_name = ["", "", ""]
 const drinks_size = []
 const drinks_price = []
+
+
+const backToHome = document.querySelector("#Back-To-Home");
+
+window.addEventListener("scroll", scrollFunction);
+
+function scrollFunction() {
+    if (window.pageXOffset > 300) {
+        backToHome.style.display = "back";
+    }
+    else {
+        backToHome.style.display = "none";
+    }
+}
+
+backToHome.addEventListener("click", backToHome);
+
+function backToHome() {
+    window.scrollTo(0,0);
+}

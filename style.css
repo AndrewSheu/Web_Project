@@ -391,7 +391,8 @@ form {
 }
 
 .booking-container .row100 .col .inputbox input,
-.booking-container .row100 .col .inputbox textarea{
+.booking-container .row100 .col .inputbox textarea,
+.booking-container .row100 .col .inputbox select {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -428,7 +429,9 @@ form {
 .booking-container .row100 .col .inputbox input:focus + .text,
 .booking-container .row100 .col .inputbox input:valid + .text,
 .booking-container .row100 .col .inputbox textarea:focus + .text,
-.booking-container .row100 .col .inputbox textarea:valid + .text {
+.booking-container .row100 .col .inputbox textarea:valid + .text,
+.booking-container .row100 .col .inputbox select:focus + .text,
+.booking-container .row100 .col .inputbox select:valid + .text {
     top: -35px;
     left: -10px;
 }
@@ -461,6 +464,12 @@ form {
 .booking-container .row100 .col .inputbox textarea:valid ~ .line {
     height: 100%;
 }
+
+.booking-container .row100 .col .inputbox select:focus ~ .line,
+.booking-container .row100 .col .inputbox select:valid ~ .line {
+    height: 100%;
+}
+
 
 .booking-container .row100 .col input[type="submit"] {
     border: 2px solid white;
@@ -566,3 +575,25 @@ footer {
     padding: 20px;
     justify-content: right;
 }
+
+
+
+.varrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-25px);
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #fb5849;
+    border: 0 none;
+    line-height: 44px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 36px;
+    font-family: 'FontAwesome';
+    color: #FFF;
+    z-index: 5;
+    outline: none;
+    opacity: 0.3;
+    transition: all .3s;
