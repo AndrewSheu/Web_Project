@@ -238,6 +238,7 @@ header {
 .menu-container1 {
     width: 100%;
     background-color: #FCDD6E;
+    min-height: 110vh;
     height: auto;
 }
 
@@ -365,7 +366,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
 }
 
 .booking {
@@ -379,7 +379,8 @@ header {
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 30px;
+    margin-left: 60px;
+    min-width: 50%;
     width: 100%;
     opacity: 85%;
 }
